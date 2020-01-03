@@ -8,8 +8,7 @@ namespace NumberSorter.Sorting_Algorithm
 {
     class Selection : ISort
     {
-
-        public void Sort(IList<Decimal> vault)
+        public IList<Decimal> Sort(IList<Decimal> vault)
         {
             Decimal n = vault.Count;
 
@@ -32,13 +31,7 @@ namespace NumberSorter.Sorting_Algorithm
                 vault[i] = temp;
             }
 
-            Console.Write("\nSorted List : ");
-            foreach (Decimal vl in vault)
-            {
-                Console.Write(vl);
-                Console.Write(", ");
-            }
-            Console.WriteLine();
+            return vault;
         }
     }   
 }

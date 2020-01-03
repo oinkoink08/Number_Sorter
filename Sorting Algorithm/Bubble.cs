@@ -8,7 +8,7 @@ namespace NumberSorter.Sorting_Algorithm
 {
     class Bubble : ISort
     {
-        public void Sort(IList<Decimal> vault)
+        public IList<Decimal> Sort(IList<Decimal> vault)
         {
             Decimal n = vault.Count;
             for (int i = 0; i < n - 1; i++)
@@ -25,13 +25,7 @@ namespace NumberSorter.Sorting_Algorithm
                 }
             }
 
-            Console.Write("\nSorted List : ");
-            foreach (Decimal vl in vault)
-            {
-                Console.Write(vl);
-                Console.Write(", ");
-            }
-            Console.WriteLine();
+            return vault;
         }
     }
 }

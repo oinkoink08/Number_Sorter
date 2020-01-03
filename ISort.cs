@@ -8,6 +8,6 @@ namespace NumberSorter
 {
     interface ISort
     {
-        void Sort(IList<Decimal> vault);
+        IList<Decimal> Sort(IList<Decimal> vault);
     }
 }
