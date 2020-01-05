@@ -8,9 +8,9 @@ namespace NumberSorter.Sorting_Algorithm
 {
     class Bubble : ISort
     {
-        public IList<Decimal> Sort(IList<Decimal> vault)
+        public IList<decimal> Sort(IList<decimal> vault)
         {
-            Decimal n = vault.Count;
+            decimal n = vault.Count;
             for (int i = 0; i < n - 1; i++)
             {
                 for (int j = 0; j < n - i - 1; j++)
@@ -18,7 +18,7 @@ namespace NumberSorter.Sorting_Algorithm
                     if (vault[j] > vault[j + 1])
                     {
                         // swap temp and arr[i] 
-                        Decimal temp = vault[j];
+                        decimal temp = vault[j];
                         vault[j] = vault[j + 1];
                         vault[j + 1] = temp;
                     }

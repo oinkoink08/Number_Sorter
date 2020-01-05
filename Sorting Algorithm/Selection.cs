@@ -8,9 +8,9 @@ namespace NumberSorter.Sorting_Algorithm
 {
     class Selection : ISort
     {
-        public IList<Decimal> Sort(IList<Decimal> vault)
+        public IList<decimal> Sort(IList<decimal> vault)
         {
-            Decimal n = vault.Count;
+            decimal n = vault.Count;
 
             // One by one move boundary of unsorted subarray 
             for (int i = 0; i < n - 1; i++)
@@ -26,7 +26,7 @@ namespace NumberSorter.Sorting_Algorithm
                 }
 
                 // Swap the found minimum element with the first element 
-                Decimal temp = vault[min_idx];
+                decimal temp = vault[min_idx];
                 vault[min_idx] = vault[i];
                 vault[i] = temp;
             }

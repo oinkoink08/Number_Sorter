@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumberSorter
 {
-    interface ISort
+    public interface ISort
     {
         IList<Decimal> Sort(IList<Decimal> vault);
     }

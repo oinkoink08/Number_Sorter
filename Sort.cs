@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NumberSorter
 {
-    class Sort
+    public class Sort
     {        
         public ISort SortingMethod(String SortType)
         {
@@ -23,6 +23,13 @@ namespace NumberSorter
                     Console.WriteLine("Invalid Sort");
                     throw new NotImplementedException();
             }
+        }
+
+        public string[] SortingMethod()
+        {
+            string[] sortingType = { "Bubble Sort", "Selection Sort" };
+
+            return sortingType;
         }
     }
 }
